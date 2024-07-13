@@ -1,0 +1,248 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Navbar */
+.custom-navbar {
+  background-color: #000 !important;
+}
+.custom-navbar .nav-link {
+  color: #fff !important;
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-toggler-icon {
+  color: #fff;
+}
+.custom-navbar .navbar-toggler {
+  border: none;
+  background-color: transparent !important;
+}
+.custom-navbar .navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin: 5px auto;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.navbar-brand img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* figure */
+#figure {
+  padding-top: 50px;
+}
+.carousel-image {
+  height: 800px; /* Adjust this value as needed */
+  object-fit: cover;
+}
+.carousel img {
+  height: 95vh; /* Adjust this value as needed */
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 1rem;
+  border-radius: 5px;
+}
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff; /* Text color */
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 400px; /* Adjust this value for smaller screens */
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+    height: 300px; /* Adjust this value for smaller screens */
+    object-fit: cover;
+  }
+}
+
+#sambutan {
+  padding-top: 70px; /* Adjust this value to ensure the section is not covered by the navbar */
+}
+#sambutan img {
+  margin-top: 5em;
+  height: 80%;
+  width: auto;
+}
+#staff-jabatan .row .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#visi-misi {
+  padding-top: 70px; /* Adjust this value to ensure the section is not covered by the navbar */
+}
+#staff-jabatan {
+  padding-top: 70px; /* Adjust this value to ensure the section is not covered by the navbar */
+}
+#kegiatan {
+  padding-top: 70px; /* Adjust this value to ensure the section is not covered by the navbar */
+}
+
+/* visi misi motto */
+.timeline {
+  position: relative;
+  padding: 10px 0;
+  list-style: none;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e9ecef;
+  left: 50%;
+  margin-left: -1px;
+}
+.timeline-item {
+  position: relative;
+  margin: 0 0 20px;
+}
+.timeline-item::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.timeline-item .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  z-index: 100;
+}
+.timeline-item .timeline-panel {
+  position: relative;
+  width: 46%;
+  padding: 20px;
+  border-radius: 4px;
+  background: #343a40;
+  color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  animation: fadeInUp 1s ease-in-out;
+}
+.timeline-item .timeline-panel::before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #343a40;
+  border-right: 0 solid #343a40;
+  border-bottom: 15px solid transparent;
+  content: "";
+}
+.timeline-item.left .timeline-panel {
+  left: 0;
+}
+.timeline-item.right .timeline-panel {
+  left: 54%;
+}
+.timeline-item.right .timeline-panel::before {
+  left: -15px;
+  right: auto;
+  border-left-width: 0;
+  border-right-width: 15px;
+  border-right-color: #343a40;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* team */
+.team-photo {
+  width: 100%;
+  height: auto;
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* image */
+.image-container {
+  position: relative;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+.footer .row {
+  margin-bottom: 20px;
+}
+.footer .row div {
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+}
+.footer-icons img {
+  width: 50px;
+  height: 50px;
+}
