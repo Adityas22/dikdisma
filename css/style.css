@@ -44,12 +44,10 @@ html {
   padding-top: 50px;
 }
 .carousel-image {
-  height: 800px; /* Adjust this value as needed */
+  height: 95vh; /* Adjust this value as needed */
   object-fit: cover;
 }
-.carousel img {
-  height: 95vh; /* Adjust this value as needed */
-}
+
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 1rem;

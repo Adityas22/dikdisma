@@ -315,7 +315,6 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.1135826310626!2d110.38429896631732!3d-7.799494588677957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577eeaaaaaab%3A0x7020f6c639124411!2sDinas%20DIKPORA%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1720794051682!5m2!1sid!2sid"
                         width="100%" height="250" style="border: 0" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p>Our Location</p>
                 </div>
                 <div class="col-md-6 d-flex flex-column align-items-start">
                     <div class="d-flex align-items-center mb-2">
@@ -345,11 +344,11 @@
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

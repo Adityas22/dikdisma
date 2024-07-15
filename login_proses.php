@@ -1,5 +1,6 @@
 <?php
 include 'koneksi.php';
+session_start();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -35,7 +36,7 @@ function aes_decrypt($data, $key)
 }
 
 // Use a predetermined AES key
-$aes_key = 'dikporasma'; // 32 character key for AES-256
+$aes_key = 'dikporasmaabcdefghijklnopqrs'; // 32 character key for AES-256
 
 $cek = mysqli_query($connect, "SELECT * FROM admin WHERE username='$username'");
 
@@ -51,27 +52,13 @@ if (mysqli_num_rows($cek) > 0) {
 
     if ($decrypted_stored_password === $caesar_encrypted_password) {
         // Password match
+        $_SESSION['user'] = $username;
         header("location: data.php?message=login_berhasil");
-        // print($username);
-        // print("\n");
-        // print($decrypted_stored_password);
-        // print("\n");
-        // print($caesar_encrypted_password);
     } else {
         // Password does not match
         header("location: login.php?message=login_gagal");
-        // print($username);
-        // print("\n");
-        // print($decrypted_stored_password);
-        // print("\n");
-        // print($caesar_encrypted_password);
     }
 } else {
     // Username not found
     header("location: login.php?message=login_gagal");
-    // print($username);
-    // print("\n");
-    // print($decrypted_stored_password);
-    // print("\n");
-    // print($caesar_encrypted_password);
 }

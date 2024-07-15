@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/style_surat.css" />
 </head>
 
 <body>
@@ -19,7 +19,6 @@
         <div class="info">
             <h1>Register</h1>
             <div class="form-container">
-                <a href="#" class="trial-button">Try it free 7 days then $20/mo. thereafter</a>
                 <form action="register_proses.php" method="post">
                     <div class="form-group">
                         <label for="username">Username</label>

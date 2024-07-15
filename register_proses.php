@@ -32,7 +32,7 @@ function aes_encrypt($data, $key) {
 }
 
 // Use a predetermined AES key
-$aes_key = 'dikporasma'; // 32 character key for AES-256
+$aes_key = 'dikporasmaabcdefghijklnopqrs'; // 32 character key for AES-256
 
 $caesar_shift = 3; // Shift for Caesar Cipher
 $caesar_encrypted_password = caesar_encrypt($password, $caesar_shift);
