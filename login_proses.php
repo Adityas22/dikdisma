@@ -62,3 +62,4 @@ if (mysqli_num_rows($cek) > 0) {
     // Username not found
     header("location: login.php?message=login_gagal");
 }
+?>

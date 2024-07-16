@@ -49,7 +49,7 @@
 
     <!-- Carousel -->
     <div id="figure" class="carousel slide" data-ride="carousel">
-        <ol class=" carousel-indicators">
+        <ol class="carousel-indicators">
             <li data-target="#figure" data-slide-to="0" class="active"></li>
             <li data-target="#figure" data-slide-to="1"></li>
             <li data-target="#figure" data-slide-to="2"></li>
@@ -102,8 +102,8 @@
     <div class="container my-5 animate" id="sambutan">
         <h2 class="text-center">SAMBUTAN KEPALA BIDANG SEKSI SMA</h2>
         <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="img/sambutan.png" class="img-fluid rounded" alt="Kepala Bidang Seksi SMA" />
+            <div class="col d-flex flex-column align-items-center mb-5">
+                <img src="img/sambutan_kepala.png" class="img-fluid rounded" alt=" Kepala Bidang Seksi SMA" />
             </div>
             <div class="col-md-8 text-justify my-5">
                 <h4>Assalamu'alaikum warahmatullahi wabarakatuh</h4>
@@ -217,8 +217,9 @@
                 <h5>Angga Arisdian P</h5>
                 <p>Administrasi Umum</p>
             </div>
-            <div class="col-md-3 team-member" style="margin-top: 5.5em">
-                <img src="img/xx.png" alt="Dessy Yudhanti S.E" class="team-photo" />
+            <div class="col-md-3 team-member">
+                <img src="img/team_13.png" alt="Dessy Yudhanti S.E" class="team-photo" style="height:auto
+                    ; width:95%;" />
                 <h5>Dessy Yudhanti S.E</h5>
                 <p>Penyusun Rencana Kegiatan dan Anggaran</p>
             </div>
@@ -226,7 +227,7 @@
         <div class="row justify-content-center">
             <!-- Third row -->
             <div class="col-md-3 team-member">
-                <img src="img/team10.png" alt="Markus Lee" class="team-photo" />
+                <img src="img/team_20.png" alt="Markus Lee" class="team-photo" />
                 <h5>Suyatno</h5>
                 <p>Teknisi Sarana dan Prasarana</p>
             </div>
@@ -235,71 +236,114 @@
 
     <!-- image -->
     <div class="container my-5 animate" id="kegiatan">
-        <h1 class="text-center">Dokumentasi Kegiatan</h1>
+        <h1 class="text-center">Dokumentasi</h1>
         <div class="text-center my-4">
             <button class="btn btn-primary filter-button" data-filter="all">
                 All
             </button>
-            <button class="btn btn-secondary filter-button" data-filter="people">
-                Akademik
+            <button class="btn btn-secondary filter-button" data-filter="kegiatan">
+                Kegiatan
             </button>
-            <button class="btn btn-success filter-button" data-filter="animal">
-                Non-Akademik
-            </button>
-            <button class="btn btn-danger filter-button" data-filter="nature">
+            <button class="btn btn-danger filter-button" data-filter="rapat">
                 Rapat
-            </button>
-            <button class="btn btn-warning filter-button" data-filter="seascape">
-                Beasiswa
             </button>
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4 filter people">
+            <div class="col-lg-4 col-md-6 mb-4 filter kegiatan">
                 <div class="image-container">
-                    <img src="img/figure_langit.jpeg" class="img-fluid" alt="Image 1" />
+                    <img src="img/non-aka.jpeg" class="img-fluid" alt="Image 1" />
                     <div class="overlay">
-                        <div class="text">WARM OSCAR</div>
+                        <div class="text">FLS2N 2024 Tari Kreasi</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 filter animal">
+            <div class="col-lg-4 col-md-6 mb-4 filter kegiatan">
                 <div class="image-container">
-                    <img src="img/figure2.jpg" class="img-fluid" alt="Image 2" />
+                    <img src="img/non-aka1.jpeg" class="img-fluid" alt="Image 1" />
                     <div class="overlay">
-                        <div class="text">WARM OSCAR</div>
+                        <div class="text">FLS2N 2024 Instrumen Solo Gitar</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 filter nature">
+            <div class="col-lg-4 col-md-6 mb-4 filter kegiatan">
                 <div class="image-container">
-                    <img src="img/figure2.jpg" class="img-fluid" alt="Image 2" />
+                    <img src="img/non-aka2.jpeg" class="img-fluid" alt="Image 1" />
                     <div class="overlay">
-                        <div class="text">WARM OSCAR</div>
+                        <div class="text">FLS2N 2024 Desain Poster</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 filter animal">
+            <div class="col-lg-4 col-md-6 mb-4 filter kegiatan">
                 <div class="image-container">
-                    <img src="img/figure2.jpg" class="img-fluid" alt="Image 2" />
+                    <img src="img/non-aka3.jpeg" class="img-fluid" alt="Image 1" />
                     <div class="overlay">
-                        <div class="text">WARM OSCAR</div>
+                        <div class="text">O2SN 2024 Cabang Atletik</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 filter nature">
+            <div class="col-lg-4 col-md-6 mb-4 filter kegiatan">
                 <div class="image-container">
-                    <img src="img/figure2.jpg" class="img-fluid" alt="Image 2" />
+                    <img src="img/non-aka4.jpeg" class="img-fluid" alt="Image 1" />
                     <div class="overlay">
-                        <div class="text">WARM OSCAR</div>
+                        <div class="text">O2SN 2024 Cabang Bulu Tangkis</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 filter animal">
+            <div class="col-lg-4 col-md-6 mb-4 filter kegiatan">
                 <div class="image-container">
-                    <img src="img/figure2.jpg" class="img-fluid" alt="Image 2" />
+                    <img src="img/non-aka5.jpeg" class="img-fluid" alt="Image 1" />
                     <div class="overlay">
-                        <div class="text">WARM OSCAR</div>
+                        <div class="text">O2SN 2024 Cabang Renang</div>
+                    </div>
+                </div>
+            </div>
+            <!-- rapat -->
+            <div class="col-lg-4 col-md-6 mb-4 filter rapat">
+                <div class="image-container">
+                    <img src="img/rapat.jpeg" class="img-fluid" alt="Image 1" />
+                    <div class="overlay">
+                        <div class="text">Rapat TPPKS </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 filter rapat">
+                <div class="image-container">
+                    <img src="img/rapat1.jpeg" class="img-fluid" alt="Image 1" />
+                    <div class="overlay">
+                        <div class="text">Rapat OSN</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 filter rapat">
+                <div class="image-container">
+                    <img src="img/rapat2.jpeg" class="img-fluid" alt="Image 1" />
+                    <div class="overlay">
+                        <div class="text">Rapat Sinkronisasi Dokumen</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 filter rapat">
+                <div class="image-container">
+                    <img src="img/rapat3.jpeg" class="img-fluid" alt="Image 1" />
+                    <div class="overlay">
+                        <div class="text">Sosialisasi ASPD SMA 2024</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 filter rapat">
+                <div class="image-container">
+                    <img src="img/rapat-4.jpeg" class="img-fluid" alt="Image 1" />
+                    <div class="overlay">
+                        <div class="text">Rapat DAK 2024</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 filter rapat">
+                <div class="image-container">
+                    <img src="img/rapat6.jpeg" class="img-fluid" alt="Image 1" />
+                    <div class="overlay">
+                        <div class="text">Bimtek Tindak Lanjut Rapor</div>
                     </div>
                 </div>
             </div>
@@ -307,7 +351,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer" id="footer">
+    <footer class=" footer" id="footer">
         <div class="container container-fluid">
             <div class="row footer-icons">
                 <div class="col-md-6">
@@ -345,10 +389,15 @@
 
     <!-- Bootstrap JS and dependencies -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

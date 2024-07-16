@@ -48,6 +48,8 @@ if ($cek > 0) {
     $query = mysqli_query($connect, $sql) or die(mysqli_error($connect));
     if ($query) {
         header("location: login.php?message=register_berhasil");
+    } else {
+        echo "Registration failed: " . mysqli_error($connect);
     }
 }
 ?>
