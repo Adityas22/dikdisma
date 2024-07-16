@@ -23,6 +23,14 @@ $(document).ready(function () {
     } // End if
   });
 
+  // course
+  $(document).ready(function () {
+    $(".carousel").carousel({
+      interval: 5000, // Atur interval ke 5 detik (5000ms)
+      pause: "hover", // Carousel akan berhenti saat hover
+    });
+  });
+
   // Filter functionality
   $(".filter-button").click(function () {
     var value = $(this).attr("data-filter");

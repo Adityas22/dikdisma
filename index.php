@@ -48,7 +48,7 @@
     </nav>
 
     <!-- Carousel -->
-    <div id="figure" class="carousel slide" data-ride="carousel">
+    <div id="figure" class="carousel slide" data-ride="carousel" data-interval="3000">
         <ol class="carousel-indicators">
             <li data-target="#figure" data-slide-to="0" class="active"></li>
             <li data-target="#figure" data-slide-to="1"></li>
@@ -98,12 +98,13 @@
         </a>
     </div>
 
+
     <!-- Sambutan Kepala Bidang Seksi SMA -->
     <div class="container my-5 animate" id="sambutan">
         <h2 class="text-center">SAMBUTAN KEPALA BIDANG SEKSI SMA</h2>
-        <div class="row">
-            <div class="col d-flex flex-column align-items-center mb-5">
-                <img src="img/sambutan_kepala.png" class="img-fluid rounded" alt=" Kepala Bidang Seksi SMA" />
+        <div class="row align-items-center">
+            <div class="col-md-4 d-flex flex-column align-items-center mb-5">
+                <img src="img/sambutan_kepala.png" class="img-fluid rounded bigger-img" alt="Kepala Bidang Seksi SMA" />
             </div>
             <div class="col-md-8 text-justify my-5">
                 <h4>Assalamu'alaikum warahmatullahi wabarakatuh</h4>
@@ -124,7 +125,7 @@
                 <p>
                     Melalui website ini, kami berusaha menyediakan informasi yang
                     akurat, terkini, dan bermanfaat. Anda akan menemukan berbagai
-                    program dan kegiatan,serta capaian-capaian yang telah diraih. Kami
+                    program dan kegiatan, serta capaian-capaian yang telah diraih. Kami
                     mengajak Anda untuk terus mendukung upaya kami dalam mencerdaskan
                     kehidupan bangsa dan memajukan prestasi olahraga di Daerah Istimewa
                     Yogyakarta. Mari kita wujudkan cita-cita bersama untuk masa depan
@@ -139,6 +140,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- visi misi motto -->
     <div class="container my-5 animate" id="visi-misi">
@@ -392,6 +394,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
 
 </body>
 
