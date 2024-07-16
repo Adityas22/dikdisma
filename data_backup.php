@@ -61,8 +61,8 @@ $result = mysqli_query($connect, $query);
         </div>
     </nav>
 
-    <!-- Konten Utama -->
-    <div class="data">
+   <!-- Konten Utama -->
+   <div class="data">
         <h1>Halo! Selamat datang di E-Surat, anda berhasil login sebagai admin dan memiliki akses penuh.
         </h1>
 
