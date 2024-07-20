@@ -7,18 +7,29 @@ if (!isset($_SESSION['user'])) {
 }
 
 
-$filterQuery = "";
-if (isset($_GET['tujuan_staff'])) {
-    $tujuan_staff = mysqli_real_escape_string($connect, $_GET['tujuan_staff']);
-    $filterQuery = "WHERE tujuan LIKE '%$tujuan_staff%'";
-} else if (isset($_GET['tanggal'])) {
-    $tanggal = mysqli_real_escape_string($connect, $_GET['tanggal']);
-    $bulan = date('m', strtotime($tanggal));
-    $tahun = date('Y', strtotime($tanggal));
-    $filterQuery = "WHERE MONTH(STR_TO_DATE(tanggal, '%d-%m-%Y')) = '$bulan' AND YEAR(STR_TO_DATE(tanggal, '%d-%m-%Y')) = '$tahun'";
-}
+// $filterQuery = "";
+// if (isset($_GET['tujuan_staff'])) {
+//     $tujuan_staff = mysqli_real_escape_string($connect, $_GET['tujuan_staff']);
+//     $filterQuery = "WHERE tujuan LIKE '%$tujuan_staff%'";
+// } 
 
-if (isset($_GET['all_data'])) {
+// if (isset($_GET['tanggal'])) {
+//     $tanggal = mysqli_real_escape_string($connect, $_GET['tanggal']);
+//     $bulan = date('m', strtotime($tanggal));
+//     $tahun = date('Y', strtotime($tanggal));
+//     $filterQuery = "WHERE MONTH(STR_TO_DATE(tanggal, '%d-%m-%Y')) = '$bulan' AND YEAR(STR_TO_DATE(tanggal, '%d-%m-%Y')) = '$tahun'";
+// }
+
+// if (isset($_GET['all_data'])) {
+//     $filterQuery = "";
+// }
+
+$filterQuery = "";
+if (isset($_GET['filter_month']) && isset($_GET['query'])) {
+    $filterQuery = urldecode($_GET['query']);
+} else if (isset($_GET['filter_staff']) && isset($_GET['query'])) {
+    $filterQuery = urldecode($_GET['query']);
+} else if (isset($_GET['all_data'])) {
     $filterQuery = "";
 }
 
@@ -76,7 +87,7 @@ $data = mysqli_query($connect, $query);
         <h1>Halo! Selamat datang di E-Surat, anda berhasil login sebagai admin dan memiliki akses penuh.
         </h1>
 
-        <!-- Tombol Ekspor -->
+        <!-- Tombol Ekspor
         <div class="d-flex justify-content-center align-items-center flex-wrap">
             <button class="btn btn-primary mr-5" data-toggle="modal" data-target="#inputModal">Tambah Data</button>
             <form id="filterForm" method="GET" action="data.php" class="d-flex align-items-between flex-wrap">
@@ -102,7 +113,45 @@ $data = mysqli_query($connect, $query);
                     <button type="submit" class="btn btn-secondary">Filter Tujuan Staff</button>
                 </div>
             </form>
+        </div> -->
+        <!-- Tombol Ekspor -->
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <button class="btn btn-primary mr-5" data-toggle="modal" data-target="#inputModal">Tambah Data</button>
+
+            <!-- Form Filter Bulan-Tahun -->
+            <form id="filterMonthForm" method="GET" action="filter_month.php"
+                class="d-flex align-items-center flex-wrap">
+                <div class="form-inline mr-5">
+                    <input type="month" class="form-control" id="tanggalSurat" name="tanggal">
+                    <button type="submit" class="btn btn-success">Filter Bulan-tahun</button>
+                </div>
+            </form>
+
+            <!-- Form Tampilkan Semua Data -->
+            <form id="showAllForm" method="GET" action="all_data.php" class="form-group mt-3 mr-5">
+                <button type="submit" class="btn btn-primary" name="all_data">Tampilkan Semua Data</button>
+            </form>
+
+            <!-- Form Filter Tujuan Staff -->
+            <form id="filterStaffForm" method="GET" action="filter_staff.php"
+                class="d-flex align-items-center flex-wrap">
+                <div class="form-inline mr-3">
+                    <select class="form-control" id="tujuanSurat" name="tujuan_staff" required>
+                        <option value="Dra. Supartini">Dra. Supartini</option>
+                        <option value="Widayatun S.Pd">Widayatun S.Pd</option>
+                        <option value="Haryoko S.Pd">Haryoko S.Pd</option>
+                        <option value="Tri Suryani S.Kom">Tri Suryani S.Kom</option>
+                        <option value="Andiyanto Eko Saputro S.Pd">Andiyanto Eko Saputro S.Pd</option>
+                        <option value="Ika Indah Yulianingrum S.H">Ika Indah Yulianingrum S.H</option>
+                        <option value="Angga Arisdian P">Angga Arisdian P</option>
+                        <option value="Dessy Yudhanti S.E">Dessy Yudhanti S.E</option>
+                        <option value="Suyatno">Suyatno</option>
+                    </select>
+                    <button type="submit" class="btn btn-secondary">Filter Tujuan Staff</button>
+                </div>
+            </form>
         </div>
+
     </div>
 
     <!-- isi datatables -->
